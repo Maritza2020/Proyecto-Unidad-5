@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 </title>
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="scripts" href="scripts\main.js">
+    
+</head>
+<body>
+    <div class="box-Contenido">
+    <h1>ROSETAS</h1>
+    <h2>Comparte tus logros con la Comunidad</h2>
+    <button class="button-2"><a href="index.html">Ir a página princial</a></button>
+    </div>      
+
+    <div class="howler">
+      <button id="playMusic">Play</button>
+      <button id="pauseMusic">Pause</button>
+      <button id="stopMusic">Stop</button>
+    </div>
+
+    <div class="contenedor">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="recursos\chang-duong-KrfID_ZQxWs-unsplash.jpg"  width="415" alt="Abrazo"> </li>
+                <li class="glide__slide"> <img src="recursos\clay-banks-LjqARJaJotc-unsplash.jpg" width="400" alt="Manos"></li>
+                <li class="glide__slide"><img src="recursos\duy-pham-Cecb0_8Hx-o-unsplash.jpg" width="400" alt="Salto"> </li>
+                <li class="glide__slide"> <img src="recursos\markus-winkler-L91XxIUUGU4-unsplash.jpg" width="400"  alt="Coworking"></li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>  
+    
+            <script src="scripts\Glide.js"> </script>
+            
+            <script>
+              new Glide('.glide').mount()
+            </script>
+            <script>
+              const config = {
+              type: "carousel",
+              perView: 3,
+              breakpoints: {
+              0: {
+                  perView: 3
+                }
+              }
+            }; 
+            new Glide(".glide", config).mount();
+          </script>      
+           
+          </div>
+        </div>   
+    
+
+</body>
